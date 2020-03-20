@@ -10,7 +10,7 @@ First run:
 
 	$ ./cData.sh
 
-Script updates its DB only with new record. It checks the existence of old data for a location for the specific timestamp.
+Script updates its DB only with new records. It checks the existence of old data for a location for the specific timestamp.
 
 Just delete local CSV or DB files. Next run will recreate required resources.
 

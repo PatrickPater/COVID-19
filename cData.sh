@@ -43,7 +43,7 @@ First run:
 
   $ ./cData.sh
 
-Script updates its DB only with new record. It checks the existence of old data
+Script updates its DB only with new records. It checks the existence of old data
 for a location for the specific timestamp.
 
 Just delete local CSV or DB files. Next run will recreate required resources.
@@ -284,7 +284,7 @@ function test_mode {
 	if [ "$pass" = false ] && [ "$mode" = "tabs" ]; then
 		pass=true
 	fi
-	if [ "$pass" = false ] && [ "$mode" = "tlc" ]; then
+	if [ "$pass" = false ] && [ "$mode" = "tcl" ]; then
 		pass=true
 	fi
 	
