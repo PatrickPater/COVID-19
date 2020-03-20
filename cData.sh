@@ -297,7 +297,8 @@ function test_mode {
 
 if [ "$call_func" = getCountry ]; then
 	test_countryID;
-elif [ "$mode" != "csv" ]; then
+fi
+if [ "$mode" != "csv" ]; then
 	test_mode;
 fi
 
