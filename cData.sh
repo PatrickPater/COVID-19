@@ -67,7 +67,31 @@ EXAMPLES:
   207,Venezuela,Venezuela
   34,Vietnam,Vietnam
 
+  $ ./cData.sh -l -m html
+  -----------------------
   
+  <TR><TH>id</TH>
+  <TH>city</TH>
+  <TH>region</TH>
+  </TR>
+  <TR><TD>75</TD>
+  <TD>Afghanistan</TD>
+  <TD>Afghanistan</TD>
+  </TR>
+  <TR><TD>174</TD>
+  <TD>Albania</TD>
+  <TD>Albania</TD>
+  </TR>
+  <TR><TD>80</TD>
+  <TD>Algeria</TD>
+  <TD>Algeria</TD>
+  </TR>
+  <TR><TD>112</TD>
+  <TD>Andorra</TD>
+  <TD>Andorra</TD>
+  </TR>
+  ...
+
   $ ./cData.sh -c 128 
   -------------------
   
