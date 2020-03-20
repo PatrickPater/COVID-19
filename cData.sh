@@ -188,8 +188,9 @@ function main(){
 
 function getCountry(){
 	countryID=${1:?"getCountry: Missing operand #1"}
-	
-	echo -e ".mode $mode\n.h on\nSELECT * FROM _data WHERE l_key = $countryID ORDER BY ts;" | sqlite3 "$db_file"
+	cName=$(echo "SELECT region from _location WHERE id = $countryID;" | sqlite3 "$db_file");
+
+	echo -e ".mode $mode\n.h on\nSELECT l_key AS \"l_key = $cName\",ts,confirmed,deaths,recovered FROM _data WHERE l_key = $countryID ORDER BY ts;" | sqlite3 "$db_file"
 }
 
 function indexCountry(){
