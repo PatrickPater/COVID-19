@@ -51,7 +51,7 @@ Options:
  	
 	$ ./cData.sh -c 128 
  
-	l_key,ts,confirmed,deaths,recovered
+	"l_key = Poland",ts,confirmed,deaths,recovered
 	128,"2020-03-04 08:00:00",1,0,0
 	128,"2020-03-06 18:30:00",5,0,0
 	128,"2020-03-08 20:00:00",8,0,0
@@ -59,11 +59,11 @@ Options:
  	
 	./cData.sh -c 128 -m column
  
-	l_key       ts                   confirmed   deaths      recovered 
-	----------  -------------------  ----------  ----------  ----------
-	128         2020-03-04 08:00:00  1           0           0         
-	128         2020-03-06 18:30:00  5           0           0         
-	128         2020-03-08 20:00:00  8           0           0         
+	l_key = Poland  ts                   confirmed   deaths      recovered 
+	--------------  -------------------  ----------  ----------  ----------
+	128             2020-03-04 08:00:00  1           0           0         
+	128             2020-03-06 18:30:00  5           0           0         
+	128             2020-03-08 20:00:00  8           0           0         
 	...  
 	
 ## TECHNICAL SPECIFICATION
