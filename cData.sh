@@ -148,7 +148,7 @@ function db_insert(){
 
 function main(){
 	# check is sqlite3 is installed
-	if [ -x "$(sqlite3 -version)" ]; then
+	if ! [ -x "$(command -v sqlite3)" ]; then
 		brew install sqlite3
 	fi
 	
