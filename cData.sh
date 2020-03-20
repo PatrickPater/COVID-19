@@ -147,6 +147,11 @@ function db_insert(){
 }
 
 function main(){
+	# check is sqlite3 is installed
+	if [ -x "$(sqlite3 -version)" ]; then
+		brew install sqlite3
+	fi
+	
 	# create DB file IF NOT EXISTS
 	if [ ! -f "$db_file" ]; then
 		touch "db_file"
