@@ -6,7 +6,7 @@ Before executing for the first time make sure executable rights are set on the f
 
 	$ chmod u+x cData.sh
   
-First run:
+First run / DB update:
 
 	$ ./cData.sh
 
