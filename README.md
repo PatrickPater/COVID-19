@@ -25,7 +25,7 @@ Options:
 
 	-l       list of all locations
 	-c       show data for location
-	         [58,54,,...]
+	         [58,54,...]
 	-m       output data format
 	         [csv,column,html,insert,line,list,tabs,tcl]
 	         (default:CSV)
@@ -90,7 +90,7 @@ Options:
 	128             2020-03-08 20:00:00  8           0           0         
 	...  
 	
-## TECHNICAL SPECIFICATION
+## DB DATA SCHEMA
 
 	TABLE _location(
 		"id" INTEGER PRIMARY KEY,

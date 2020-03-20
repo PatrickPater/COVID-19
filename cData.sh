@@ -22,7 +22,7 @@ Usage: ./cData.sh [option(s)]
 Options:
   -l       list of all locations
   -c       show data for location
-           [58,54,,...]
+           [58,54,...]
   -m       output data format
            [csv,column,html,insert,line,list,tabs,tcl]
            (default:CSV)
@@ -111,8 +111,8 @@ EXAMPLES:
   128             2020-03-08 20:00:00  8           0           0         
   ...  
   
-TECHNICAL SPECIFICATION:
-========================
+DB DATA SCHEMA:
+===============
 
 TABLE _location(
 	"id" INTEGER PRIMARY KEY,
@@ -269,7 +269,7 @@ done
 function test_countryID {
 	pass=true
 	if [ "$countryID" = "" ]; then
-		echo -e "\n-d  ('countryID' parameter required)";
+		echo -e "\n-c  ('countryID' parameter required)";
 		pass=false
 	fi
 	
@@ -284,7 +284,7 @@ function test_countryID {
 function test_mode {
 	pass=false
 	if [ "$mode" = "" ]; then
-		echo -e "\n-d  ('mode' parameter required)";
+		echo -e "\n-m  ('mode' parameter required)";
 		pass=false
 	fi
 	# csv,column,html,insert,line,list,tabs,tcl
