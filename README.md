@@ -1,6 +1,6 @@
-# COVID19 data
+# COVID-19 data
 
-This script pulls COVID19 data from [nssac.bii.virginia.edu](https://nssac.bii.virginia.edu) into local SqLite DB. It has been written and tested for macOS Bash.
+This script pulls COVID-19 data from [nssac.bii.virginia.edu](https://nssac.bii.virginia.edu) into local SqLite DB. It has been written and tested for macOS Bash.
 
 Before executing for the first time make sure executable rights are set on the file.
 

@@ -305,31 +305,3 @@ fi
 # Execute selected function
 $call_func "$countryID"
 
-exit
-
-
-
-
-
-
-		---------------------------------------------------
-# echo -e '.separator "," \n.import testing.csv aj_test' | sqlite3 ajtest.db
-# echo -e ".separator ","\n.import /home/aj/ora_exported.csv qt_exported2" | sqlite3 testdatabase.db
-
-# sqlite3  -separator "," -cmd ".import /path/to/test.csv aj_test" ajtest.db
-	sqlite> .mode csv
-sqlite> .import /Users/patrick/Downloads/_COVID19/nssac-ncov-sd-01-23-2020.csv test
-sqlite> .schema test
-CREATE TABLE test(
-	"name" TEXT,
-	"Region" TEXT,
-	"Last Update" TEXT,
-	"Confirmed" INTEGER,
-	"Deaths" INTEGER,
-	"Recovered" INTEGER
-);
-
-INSERT INTO memos(id,text) 
-SELECT 5, 'text to insert' 
-WHERE NOT EXISTS(SELECT 1 FROM memos WHERE id = 5 AND text = 'text to insert');
-
